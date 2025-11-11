@@ -1,0 +1,322 @@
+# ============================================================================
+# LangGraph Research Assistant - Professional .gitignore
+# ============================================================================
+# This file follows industry best practices for Python projects with ML/AI
+# components, virtual environments, IDEs, and sensitive data handling.
+# ============================================================================
+
+# ============================================================================
+# 1. PYTHON & VIRTUAL ENVIRONMENTS
+# ============================================================================
+
+# Python virtual environments (DO NOT commit these)
+venv/
+env/
+ENV/
+myenv/
+.venv/
+.env.local
+.env.*.local
+
+# Python compiled files & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python optimized files
+*.pyc
+*.pyo
+*.pyd
+
+# Poetry & dependency managers
+poetry.lock
+Pipfile.lock
+.pip-cache/
+
+# ============================================================================
+# 2. ENVIRONMENT VARIABLES & SECRETS (CRITICAL FOR SECURITY)
+# ============================================================================
+
+# Environment files - NEVER commit API keys, credentials, tokens
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.staging
+.env.development
+.env.test
+*.env
+
+# Credential files
+.credentials/
+credentials/
+secrets/
+*.pem
+*.key
+*.crt
+*.pfx
+
+# ============================================================================
+# 3. IDE & EDITOR FILES
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+launch.json
+settings.json
+
+# PyCharm / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim & Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Atom
+.atom/
+
+# ============================================================================
+# 4. OS-SPECIFIC FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+
+# ============================================================================
+# 5. TESTING & COVERAGE
+# ============================================================================
+
+# pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# tox
+.tox/
+.nox/
+
+# Unit test / coverage reports
+nosetests.xml
+coverage/
+test-results/
+junit.xml
+
+# ============================================================================
+# 6. LOG FILES
+# ============================================================================
+
+# Application logs
+*.log
+logs/
+log/
+*.log.*
+
+# LLM/AI model logs
+debug.log
+error.log
+trace.log
+
+# ============================================================================
+# 7. TEMPORARY & CACHE FILES
+# ============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.tmp/
+tmp/
+
+# pip cache
+.pip/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Scrapy
+.scrapy
+
+# ============================================================================
+# 8. DATABASE & DATA FILES (Consider Keeping Some - Review Per Project)
+# ============================================================================
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Data files (typically don't commit large datasets)
+*.csv
+*.tsv
+*.parquet
+data/
+datasets/
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# ============================================================================
+# 9. OUTPUT FILES & GENERATED CONTENT
+# ============================================================================
+
+# Generated reports
+reports/
+samples/output*
+*.md.bak
+output/
+results/
+generated/
+
+# LLM/AI model outputs
+*.txt.generated
+model_outputs/
+
+# ============================================================================
+# 10. AI/ML MODEL FILES (Usually Too Large)
+# ============================================================================
+
+# Large model files (typically should use Git LFS or external storage)
+*.model
+*.pkl
+*.joblib
+*.pth
+*.pt
+*.ckpt
+*.h5
+checkpoints/
+models/
+weights/
+
+# ============================================================================
+# 11. DOCUMENTATION BUILDS
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+site/
+
+# ============================================================================
+# 12. PACKAGE MANAGER FILES
+# ============================================================================
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ============================================================================
+# 13. PROJECT-SPECIFIC IGNORES (LangGraph Research Assistant)
+# ============================================================================
+
+# LangGraph specific
+.langgraph/
+langgraph_artifacts/
+
+# Workflow artifacts
+workflow_logs/
+execution_logs/
+
+# Generated agent outputs
+agent_outputs/
+search_results_cache/
+summary_cache/
+
+# ============================================================================
+# 14. MISCELLANEOUS
+# ============================================================================
+
+# Local development notes
+*.local
+*.dev
+notes.txt
+scratch/
+experiments/
+
+# Docker (if used)
+.dockerignore
+docker-compose.override.yml
+
+# Git patches
+*.patch
+*.diff
+
+# ============================================================================
+# WHITELIST - IMPORTANT FILES TO KEEP (Uncomment to track essential files)
+# ============================================================================
+
+# If you want to ensure certain files are tracked even if patterns above match:
+# !.env.example          # Example env file (without real secrets)
+# !README.md
+# !requirements.txt
+# !setup.py
+# !pyproject.toml
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
