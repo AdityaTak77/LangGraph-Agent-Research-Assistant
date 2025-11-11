@@ -1,7 +1,3 @@
-Here’s a clean, production-ready **README.md** you can drop into that repo. I inferred structure and purpose from the repository listing and wrote clear install/usage steps, a mermaid diagram, and contributor notes. If you want me to tailor any bits (e.g., pin to a specific model/provider you’re using), say the word and I’ll edit it.
-
----
-
 # LangGraph Agent — Research Assistant
 
 A minimal multi-agent workflow built with **LangGraph** for end-to-end research:
